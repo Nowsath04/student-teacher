@@ -14,7 +14,7 @@ function Students() {
     try {
       setLoading(true);
       let detail = await axios.get(
-        "https://634a1f0633bb42dca4fe8c1d.mockapi.io/api/product/students"
+        "https://6384c57d3fa7acb14f0017a5.mockapi.io/students"
       );
       console.log(detail.data);
       setStudent(detail.data);
@@ -103,7 +103,7 @@ function Students() {
                               deleteDetails();
                             }}
                             type="button"
-                            class="btn btn-outline-danger "
+                            class="btn btn-outline-danger my-1"
                           >
                             Delete
                           </button>

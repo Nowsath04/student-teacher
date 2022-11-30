@@ -67,7 +67,7 @@ function Createstudent() {
     onSubmit: async (values) => {
       try {
         let studentdata = await axios.post(
-          "https://634a1f0633bb42dca4fe8c1d.mockapi.io/api/product/students",
+          "https://6384c57d3fa7acb14f0017a5.mockapi.io/students",
           values
         );
         console.log(studentdata);

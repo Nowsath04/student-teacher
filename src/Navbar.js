@@ -11,15 +11,15 @@ function Navbar() {
   };
 
   return (
-    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-secondary">
       <Link class="navbar-brand ps-3" to={"/portal/welcome"}>
-        Student - Teacher Admin portal
+        <b className="text-black">Student - Teacher Admin portal</b>
       </Link>
 
       <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
         <div class="input-group">
           <button onClick={handlelogOut} class="btn btn-primary" type="button">
-            <i class="fas fa-search">Logout</i>
+            <i>Logout</i>
           </button>
         </div>
       </form>
@@ -35,12 +35,12 @@ function Navbar() {
             aria-haspopup="true"
             aria-expanded="false"
           >
-            <span className="mr-2 d-none d-lg-inline text-gray-600 small me-3">
-              {useremail.email}
+            <span className="mr-2 d-none d-lg-inline text-black small me-3">
+             <b>{useremail.email}</b>
             </span>
             <img
               className="img-profile rounded-circle"
-              src="https://picsum.photos/id/1/50/50"
+              src="https://picsum.photos/id/10/50/50"
             />
           </a>
         </li>

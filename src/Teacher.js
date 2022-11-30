@@ -15,7 +15,7 @@ function Teacher() {
     try {
       setLoading(true);
       let detail = await axios.get(
-        "https://634a1f0633bb42dca4fe8c1d.mockapi.io/api/product/teachers"
+        "https://6384c57d3fa7acb14f0017a5.mockapi.io/teachers"
       );
       console.log(detail.data);
       setTeacher(detail.data);
@@ -102,7 +102,7 @@ function Teacher() {
                           onClick={() => {
                             deleteTeacherData()
                           }}
-                          type="button" class="btn btn-outline-danger ">
+                          type="button" class="btn btn-outline-danger my-1">
                             Delete
                           </button>
                         </td>

@@ -58,7 +58,7 @@ function Createteacher() {
     onSubmit: async (values) => {
       try {
         let teacherData = await axios.post(
-          "https://634a1f0633bb42dca4fe8c1d.mockapi.io/api/product/teachers",
+          "https://6384c57d3fa7acb14f0017a5.mockapi.io/teachers",
           values
         );
         console.log(teacherData);
